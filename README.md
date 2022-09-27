@@ -1,0 +1,2 @@
+# ElectricCalculator
+Basic electrical calculations
