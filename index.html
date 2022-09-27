@@ -9,19 +9,58 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Basic Electrical Calculations</h1>
-    <div class = 'container'>
-        <div class = container1>
-            <label for="voltage">Voltage, kV</label>
-            <div class="display" id="voltage"></div>
-        </div>
-        <div class = container1>
-            <label for="activePower">kW</label>
-            <div class="display" id="activePower"></div>
-            <label for="reactivePower">kVAr</label>
-            <div class="display" id="reactivePower"></div>
-            <label for="apparentPower">kVA</label>
-            <div class="display" id="apparentPower"></div>
+    <div class = container>
+        <h1>Basic Electrical Calculations</h1>
+    </div>
+    <div class = container>
+        <div class = container_2> 
+            <div class = internalContainer>
+                <label for="voltage">Voltage, kV</label>
+                <div class="display" id="voltage"></div>
+            </div>
+            <div class= internalContainer>
+                <label for="phases">Phases</label>
+                <select name="phases" id="phases">
+                    <option value="threePhases">3 phases</option>
+                    <option value="twoPhases">2 phases</option>
+                    <option value="singlePhase">1 phase</option>
+                </select>
+            </div>
+            <div class= internalContainer>
+                <label for="constants">Keep constant</label>
+                <select name="constants" id="constants">
+                    <option value="voltage">Voltage</option>
+                    <option value="resistance">Resistance</option>
+                    <option value="current">Current</option>
+                    <option value="active power">Active power</option>
+                </select>
+            </div>
+        </div> 
+        <div class = container_2>      
+            <div class = internalContainer_2>
+                <label for="activePower">kW</label>
+                <div class="display" id="activePower"></div>
+                <label for="reactivePower">kVAr</label>
+                <div class="display" id="reactivePower"></div>
+                <label for="apparentPower">kVA</label>
+                <div class="display" id="apparentPower"></div>            
+            </div>
+            <div class = internalContainer_2>
+                <label for="current">Current, A</label>
+                <div class="display" id="current"></div>
+                <label for="powerFactor">Power factor</label>
+                <div class="display" id="powerFactor"></div>
+                <label for="efficiency">Efficiency</label>
+                <div class="display" id="efficiency"></div>            
+            </div>
+            <div class = internalContainer_2>
+                <label for="impedance">R, Ohm</label>
+                <div class="display" id="impedance"></div>
+                <label for="reactance">X, Ohm</label>
+                <div class="display" id="reactance"></div>
+                <label for="resistance">Z, Ohm</label>
+                <div class="display" id="resistance"></div>            
+            </div>
         </div>
     </div>       
 
