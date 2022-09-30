@@ -1,8 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    /* min-height: 25vh; */
-  }
+    max-width: 600px;
+    margin: auto;
+}
 
 h1 {
     margin-left: 16px;
@@ -42,7 +42,6 @@ h1 {
     width: 150px;
 }
 
-
 .display,
 #constants,
 #phases  {
@@ -58,8 +57,7 @@ h1 {
 }
 
 .display {
-    text-align: right;
-    
+    text-align: right;    
 }
 
 #constants, #phases {

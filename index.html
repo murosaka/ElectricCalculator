@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Electrical Calculator</title>
-    <script scr="script.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -16,7 +16,9 @@
         <div class = container_2> 
             <div class = internalContainer>
                 <label for="voltage">Voltage, kV</label>
-                <div class="display" id="voltage"></div>
+                <!-- <div class="display" id="voltage"></div> -->
+                <input placeholder = "0.400" class="display" id="voltage">
+                </input>
             </div>
             <div class= internalContainer>
                 <label for="phases">Phases</label>
@@ -39,27 +41,27 @@
         <div class = container_2>      
             <div class = internalContainer_2>
                 <label for="activePower">kW</label>
-                <div class="display" id="activePower"></div>
+                <input class="display" id="activePower"></input>
                 <label for="reactivePower">kVAr</label>
-                <div class="display" id="reactivePower"></div>
+                <input class="display" id="reactivePower"></input>
                 <label for="apparentPower">kVA</label>
-                <div class="display" id="apparentPower"></div>            
+                <input class="display" id="apparentPower"></input>            
             </div>
             <div class = internalContainer_2>
                 <label for="current">Current, A</label>
-                <div class="display" id="current"></div>
+                <input class="display" id="current"></input>
                 <label for="powerFactor">Power factor</label>
-                <div class="display" id="powerFactor"></div>
+                <input class="display" id="powerFactor"></input>
                 <label for="efficiency">Efficiency</label>
-                <div class="display" id="efficiency"></div>            
+                <input class="display" id="efficiency"></input>            
             </div>
             <div class = internalContainer_2>
                 <label for="impedance">R, Ohm</label>
-                <div class="display" id="impedance"></div>
+                <input class="display" id="impedance"></input>
                 <label for="reactance">X, Ohm</label>
-                <div class="display" id="reactance"></div>
+                <input class="display" id="reactance"></input>
                 <label for="resistance">Z, Ohm</label>
-                <div class="display" id="resistance"></div>            
+                <input class="display" id="resistance"></input>            
             </div>
         </div>
     </div>       
