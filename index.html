@@ -23,14 +23,14 @@
             <div class= internalContainer>
                 <label for="phases">Phases</label>
                 <select name="phases" id="phases">
-                    <option value="threePhases">3 phases</option>
-                    <option value="twoPhases">2 phases</option>
-                    <option value="singlePhase">1 phase</option>
+                    <option value="threePhases">3 ph</option>
+                    <option value="twoPhases">2 ph</option>
+                    <option value="singlePhase">1 ph + N</option>
                 </select>
             </div>
             <div class= internalContainer>
-                <label for="constants">Keep constant</label>
-                <select name="constants" id="constants">
+                <label for="constant">Keep constant</label>
+                <select name="constant" id="constant">
                     <option value="voltage">Voltage</option>
                     <option value="resistance">Resistance</option>
                     <option value="current">Current</option>
@@ -41,27 +41,36 @@
         <div class = container_2>      
             <div class = internalContainer_2>
                 <label for="activePower">kW</label>
-                <input class="display" id="activePower"></input>
+                <input placeholder = "0.00" class="display" id="activePower">
+                </input>
                 <label for="reactivePower">kVAr</label>
-                <input class="display" id="reactivePower"></input>
+                <input placeholder = "0.00"class="display" id="reactivePower">
+                </input>
                 <label for="apparentPower">kVA</label>
-                <input class="display" id="apparentPower"></input>            
+                <input placeholder = "0.00" class="display" id="apparentPower">
+            </input>            
             </div>
             <div class = internalContainer_2>
                 <label for="current">Current, A</label>
-                <input class="display" id="current"></input>
+                <input placeholder = "0.00" class="display" id="current">
+                </input>
                 <label for="powerFactor">Power factor</label>
-                <input class="display" id="powerFactor"></input>
+                <input placeholder = "0.85"class="display" id="powerFactor">
+                </input>
                 <label for="efficiency">Efficiency</label>
-                <input class="display" id="efficiency"></input>            
+                <input placeholder = "1.00" class="display" id="efficiency">
+                </input>            
             </div>
             <div class = internalContainer_2>
                 <label for="impedance">R, Ohm</label>
-                <input class="display" id="impedance"></input>
+                <input placeholder = "0" class="display" id="impedance">
+                </input>
                 <label for="reactance">X, Ohm</label>
-                <input class="display" id="reactance"></input>
+                <input placeholder = "0" class="display" id="reactance">
+                </input>
                 <label for="resistance">Z, Ohm</label>
-                <input class="display" id="resistance"></input>            
+                <input placeholder = "0" class="display" id="resistance">
+                </input>            
             </div>
         </div>
     </div>       
