@@ -121,7 +121,7 @@ apparentPowerInput.addEventListener('change', function(){
     getReactivePower();
     getCurrent();
     getResistance();
-    getImpedance();``
+    getImpedance();
     getReactance();
     updateInputs();
 });
@@ -144,6 +144,19 @@ efficiencyInput.addEventListener('change', function(){
     getCurrent();
     updateInputs();
 });
+
+currentInput.addEventListener('change', function(){
+    current = this.value;
+    getK();
+    apparentPower = (current * k * efficiency * voltage).toFixed(2);
+    activePower = (apparentPower * powerFactor).toFixed(2);
+    getReactivePower();
+    getResistance();
+    getImpedance();
+    getReactance();
+    updateInputs();
+});
+
 
 function updateInputs() {
     activePowerInput.value = activePower;
