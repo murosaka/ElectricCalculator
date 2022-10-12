@@ -35,8 +35,7 @@ function getK() {
         k = 1.73;
     } else if (phasesSelect.value == "singlePhase") {
         k = 1
-    };
-    console.log(k);
+    };    
 };
 
 function getApparentPower() {
@@ -127,22 +126,30 @@ apparentPowerInput.addEventListener('change', function(){
 });
 
 powerFactorInput.addEventListener('change', function(){
-    powerFactor = this.value; 
-    getK();   
-    getReactivePower();
-    getApparentPower();
-    getCurrent();
-    getResistance();
-    getImpedance();
-    getReactance();
-    updateInputs();
+    powerFactor = this.value;
+    if (powerFactor > 1 || powerFactor <= 0){
+        alert ("power factor shall be less or equal to 1 and more than 0");
+    } else {
+        getK();   
+        getReactivePower();
+        getApparentPower();
+        getCurrent();
+        getResistance();
+        getImpedance();
+        getReactance();
+        updateInputs();
+    };
 });
 
 efficiencyInput.addEventListener('change', function(){
     efficiency = this.value;
+    if (efficiency > 1 || powerFactor <= 0){
+        alert ("Efficiency shall be less or equal to 1 and more than 0");
+    } else {
     getK();
     getCurrent();
     updateInputs();
+    };
 });
 
 currentInput.addEventListener('change', function(){
@@ -157,7 +164,6 @@ currentInput.addEventListener('change', function(){
     updateInputs();
 });
 
-
 function updateInputs() {
     activePowerInput.value = activePower;
     apparentPowerInput.value = apparentPower;
@@ -166,6 +172,6 @@ function updateInputs() {
     impedanceInput.value = impedance;
     reactanceInput.value = reactance;
     resistanceInput.value = resistance;
-}
+};
 
  
