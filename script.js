@@ -116,7 +116,7 @@ reactivePowerInput.addEventListener('change', function(){
 apparentPowerInput.addEventListener('change', function(){
     apparentPower = this.value;
     getK();
-    getActivePower();
+    activePower = (apparentPower * powerFactor).toFixed(2);
     getReactivePower();
     getCurrent();
     getResistance();
@@ -174,4 +174,3 @@ function updateInputs() {
     resistanceInput.value = resistance;
 };
 
- 
